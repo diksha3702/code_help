@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+@import url("./variables.css");
+
+
+.error-box {
+    position: fixed;
+    right: 10px;
+    top: 70px;
+    z-index: 100000;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 3px;
+    transition: all 300ms ease;
+}
+
+.error-box div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-box div h4 {
+    font-family: var(--poppins);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.error-box div i {
+    color: var(--text-muted);
+    font-size: 12px;
+    margin: 0;
+    cursor: pointer;
+    transition: all 200ms ease;
+    padding: 0;
+}
+
+.error-box div i:hover {
+    opacity: 0.5;
+}
+
+.error-box.success {
+    border: 0.5px solid var(--green);
+}
+
+.error-box.success h4 {
+    color: var(--green);
+}
+
+.error-box.success i {
+    color: var(--green);
+}
+
+.error-box.error {
+    border: 0.5px solid var(--error);
+}
+
+.error-box.error h4 {
+    color: var(--error);
+}
+
+.error-box.error i {
+    color: var(--error);
+}
